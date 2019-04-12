@@ -11,14 +11,19 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+            <input id="symbol" type="text" name="symbol" placeholder="Stock Tag"/>
+            <select id="interval" name="interval">
+              <option value="1min">1min</option>
+              <option value="5min">5min</option>
+              <option value="15min">15min</option>
+              <option value="30min">30min</option>
+              <option value="60min">60min</option>
+            </select>
+            <select id="outputsize" name="outputsize">
+              <option value="compact">Compact</option>
+              <option value="full">Full</option>
+            </select>
+            <button onclick="search()">Search</button>
         </header>
       </div>
     );
